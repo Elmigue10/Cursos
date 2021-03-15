@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables CSS</title>
+    <link rel="shortcut icon" href="../HTML/Imagenes/MV.png">
+    <link rel="stylesheet" href="Normalize_resetear_estilos.css">
+    <link rel="stylesheet" href="Variables_CSS.css">
+</head>
+<body>
+    <h1>Variables CSS (Custom properties)</h1>
+    <p>Una variable es un espacio en memeoria en el que se guarda un valor para poder utilizar o modificarlo.</p>
+    <p>Las variables necesitan estar dentro de un selector.</p>
+    <p>Tienen herencia y cascada.</p>
+    <p>Existen variables globales y locales, dependera del selector en el que lo declaremos.</p>
+    <p>Las variables CSS no son lo mismo que las variables SCSS.</p>
+    <P><strong>Su sintaxis es:</strong></P>
+    <code>
+        selector{
+            <br>
+            --nombre.variable:valor;
+            <br>
+        }
+        <br>
+        propiedad: var(--nombre-variable)
+    </code>
+    <h2>Ejemplo:</h2>
+    <h2 class="Title">Variables CSS</h2>
+    <article class="Main-article">
+        <p class="Paragraph">Parrafo principal</p>
+    </article>
+    <article class="Article">
+        <p class="Paragraph">Otro parrafo</p>
+    </article>
+    <input type="checkbox" class="Check">
+    <div class="Box"></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/*
+Normlize.css , hoja de estilos para resetear los estilos
+*/
+.square{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    background: blue;
+}

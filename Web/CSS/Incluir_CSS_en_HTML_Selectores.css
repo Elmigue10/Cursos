@@ -1,0 +1,126 @@
+/* 
+Maneras de inlcuir CSS en HTML:
+
+-En la cabecera: a traves de la etiqueta: <style> codigo CSS </style>
+
+-En la linea dentro de la etiqueta: <p style="Cosigo CSS"></p>
+
+-Asociando una hoja de estilos externa a nuestro documentos: <link rel="stylesheet" href="styles.css">
+
+-A traves de @import dentro de las etiquetas: <style> @import url("styles.css")</style>
+*/
+/*
+Sintaxis:
+selector{
+    Propiedad valor;
+}
+body{
+    Background: red;
+}
+El selector es la etiqueta o el elemento a quien se le quiere aplicar el estilo
+La propiedad es lo que se desea aplicar
+
+at-rules:
+@media{}
+@font-face{}
+@keyframes{}
+@import{}
+
+Tipos de selectores:
+-Selectores basicos.
+-Selectores combinadores.
+-Selectores de pseudo-elementos.
+-Selectores de pseudo-clases.
+*/
+
+/*Selector de etiqueta */
+body{
+    background-color: lightgreen ;
+}
+h2{
+    color: chocolate;
+}
+
+/*Selector de clase, lo mas recomdable es utilizar clases*/
+.Title{
+    color: blueviolet;
+}
+.Text{
+    color: darkkhaki;
+}
+.Subtitle{
+    color: pink;
+}
+
+/*Selector de id, no es recomendable ya que no permite reutilizar codigo*/
+
+#Title{
+ color: red;
+}
+#Text{
+ color: violet;
+}
+#Subtitle{
+    color: gold;
+}
+
+/*Selectores universales
+*{
+    color:red;
+}
+El asterisco selecciona todo el documento, entonces hace que todo el documento sea rojo
+*/
+/*Selectores de atributo, seleccion los elementos que tienen este atributo*/
+[href]{
+    color: darkorchid;
+}
+
+[href="#"]{
+    color: red;
+}
+/*Selecciona los elementos que tienen este atributo al menos una vez*/
+[class~="verde"]{
+    color: darkorange;
+}
+/*Selecciona los elementos que tienen este atributo y exactamente ese valor o empiece por el valor seguido de un guion*/
+[class|="verde"]{
+    color: blue;
+}
+/*Selecciona los elementos que tienen este atributo y empiezan por ese valor*/
+[class^="verde"]{
+    color: purple;
+}
+/*Selecciona los elementos que tienen este atributo y terminan por ese valor*/
+[class$="rojo"]{
+    color: steelblue;
+}
+/*Selecciona los elementos que tienen este atributo y contengan ese valor*/
+[class*="rojo"]{
+    color: brown;
+}
+/*Selector de hermano adyacente, selecciona al hermano que este justo por debajo de el, el estilo se aplica al hermano inferior*/
+h3+h4{
+    color: red;
+}
+
+h4+h4{
+    color: blue;
+}
+/*Selector de hermano general, seleccion a todos los hermanos que esten por debajo de e, el estilo se aplica a todos los hermanos*/
+h3~h5{
+    color: yellow;
+}
+/*Selector descendente*/
+/*Selecciona todos los hijos, el estilo se aplica a todos los hijos*/
+div span{
+    color: violet
+}
+/*Selecciona a todos los hijos directos, es decir, que no esten en otras etiquetas*/
+p > span{
+    color: red;
+}
+/*
+p span {
+    color:darkcyan;
+}
+*/

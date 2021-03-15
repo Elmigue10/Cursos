@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases</title>
+    <link rel="shorcut icon" href="../HTML/Imagenes/MV.png">
+    <link rel="stylesheet" href="Pseudoclases.css">
+    <link rel="stylesheet" href="Normalize_resetear_estilos.css">
+</head>
+<body>
+    <h1>Pseudoclases</h1>
+    <p class="Inicio" id="Inicio">Son selectores que reaccionan en tiempo real detectando la interaccion del usuario con algunos elementos.</p>
+    <p>Funcionan con todos los selectores de CSS</p>
+    <p>No estan atados a ningun elemento</p>
+    <p>Su sintaxis es:</p>
+    <code>
+        selector:pseudoclase{
+            <br>
+            estilos    
+            <br>
+        }
+        <br>
+        :pseudoclase{
+            <br>
+            estilos
+            <br>
+        }
+    </code>
+    <h2>Ejemplo:</h2>
+    <h1 class="Title">Titulo</h1>
+    <a href="#" class="Link">Soy un enlace no visitado</a>
+    <a href="#" class="Link">Soy un enlace visitado</a>
+    <br>
+    <a href="#" class="Button">Button</a>
+    <input type="text" class="Input">
+    <a href="#Inicio" class="Menu">Ir a inicio</a>
+    <br>
+    <span lang="en">Hello world</span>
+    <br>
+    <span lang="es">Hola mundo</span>
+    <h2 class="Subtitle">Pseudoclases de estado</h2>
+    <h2>Ejemplo:</h2>
+    <form action="#">
+        <label class="Label">:enabled</label>
+        <input class="Input" type="text">
+        <br>
+        <label class="Label">:disabled</label>
+        <input class="Input" type="text" disabled>
+        <br>
+        <label for="Checkbox" class="Label">:cheked</label>
+        <input class="Input" type="checkbox" id="Checkbox">
+        <label class="Label">CHEKED</label>
+        <br>
+        <label class="Label">:in-range</label>
+        <input class="Input" type="number" min="50" max="60">
+        <br>
+        <label class="Label">:out-of-range</label>
+        <input class="Input" type="number" min="50" max="100">
+        <br>
+        <label class="Label">:optional</label>
+        <input class="Input" type="text">
+        <br>
+        <label class="Label">:required</label>
+        <input class="Input" type="text" required>
+        <br>
+        <label class="Label">:valid</label>
+        <input class="Input" type="number">
+        <br>
+        <label class="Label">:invalid</label>
+        <input class="Input" type="number">
+    </form>
+    <h2 class="Subtitle">Pseudoclases 2</h2>
+    <h2>Child:</h2>
+    <p>Selecciona un hijo.</p>
+    <ul>
+        <li>:first-child; Selecciona al primer hijo</li>
+        <li>:last-child; Selecciona al ultimo hijo</li>
+        <li>:nth-child(odd); Selecciona los hijos impares</li>
+        <li>:nth-child(even); Selecciona los hijos pares</li>
+        <li>:nth-child(n); Selecciona (bn) hasta llegar a b.</li>
+    </ul>
+    <h2>Ejemplo:</h2>
+    <div class="Container">
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <p class="Paragraph">Parrafo 1</p>
+        <p class="Paragraph">Parrafo 2</p>
+        <p class="Paragraph">Parrafo 3</p>
+        <p class="Paragraph">Parrafo 4</p>
+        <p class="Paragraph">Parrafo 5</p>
+        <p class="Paragraph">Parrafo 6</p>
+        <p class="Paragraph">Parrafo 7</p>
+        <p class="Paragraph">Parrafo 8</p>
+        <p class="Paragraph">Parrafo 9</p>
+    </div>
+
+</body>
+</html>

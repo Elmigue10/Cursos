@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construarte | Contactanos</title>
+    <link rel="shorcut icon" href="./Imagenes/Constru_arte.jpeg">
+    <link rel="stylesheet" href="./Styles/Construarte.css">
+    <link rel="stylesheet" href="./Styles/Contacto.css">
+    <link rel="stylesheet" href="Normalize_resetear_estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <div class="menu-imagen">
+                <img src="./Imagenes/Constru_arte.jpeg" alt="">
+            </div>
+            <div class="menu-nav">
+                    <a href="Inicio.html" class="nav-item-1">Inicio</a>
+            </div>
+            <div class="menu-nav">
+                <a href="Nosotros.html" class="nav-item">Nosotros</a>
+            </div>
+            <div class="menu-nav">
+                    <a href="Servicios.html" class="nav-item">Servicios</a>
+            </div>
+            <div class="menu-nav">
+                    <a href="#" class="nav-item">Contactanos</a>
+            </div>
+        </div>
+    </header>
+    <div class="Contacto-titulo">
+        <h1>Contactanos!</h1>
+        <p class="Contacto-descripcion">Estamos listos para construir el proyecto de tus sueños.</p>
+    </div>
+    <div class="Contacto-items">
+        <div class="Contacto-item1">
+            <img src="./Imagenes/Herramientas2.png" alt="Herramientas" class="Contacto-img1">
+            <br>
+            <p class="Contacto-text">Te ofrecemos hermosos productos hechos a mano, de buena calidad y perfectos para decorar tu hogar.</p>
+        </div>
+        <div class="Contacto-item2">
+            <img src="./Imagenes/Herramientas3.png" alt="Perzonalizar" class="Contacto-img2">
+            <p class="Contacto-text">Contruimos proyectos personalizados, nos adaptamos a tus ideas, el unico limite es el de tu imaginación.</p>
+        </div>
+    </div>
+    <div class="Contacto-form">
+        <div class="form__left">
+            <img src="./Imagenes/Constru_arte.jpeg" class="form-img">
+        </div>
+        <div class="form__right">
+            <h1 class="form__title">Envianos un correo de tu propuesta de proyecto mediante este formulario</h1>
+            <form action="/send-email" class="form" method="POST">
+                <div class="form__names">
+                    <div class="form__field">
+                        <label for="name" class="form__label">Nombres</label>
+                        <input type="text" id="name" class="form__input" placeholder="Nombres" name="name">
+                    </div>
+                    <div class="form__field">
+                        <label for="surname" class="form__label">Apellidos</label>
+                        <input type="text" id="surname" class="form__input" placeholder="Apellidos" name="apellidos"> 
+                    </div>
+                </div>
+                <div class="form__field">
+                    <label for="email" class="form__label">Correo electronico</label>
+                    <input type="email" id="email" class="form__input" placeholder="ejemplo@ejemplo.com" name="email">
+                </div>
+                <div class="form__names">
+                    <div class="form__field">
+                        <label for="name" class="form__label">Télefono celular</label>
+                        <input type="tel" id="name" class="form__input" placeholder="Télefono celular" name="telefono"> 
+                    </div>
+                    <div class="form__field">
+                        <label for="surname" class="form__label">Dirección</label>
+                        <input type="text" id="surname" class="form__input" placeholder="Dirección" name="direccion">
+                    </div>
+                </div>
+                <div class="form__field">
+                    <label for="message" class="form__label">Propuesta de proyecto</label>
+                    <textarea id="message" class="form__textarea" placeholder="Envianos tu propuesta de proyecto" name="mensaje"></textarea>
+                </div>
+                <input type="submit" class="form__submit" value="Enviar">
+            </form>
+        </div>
+    </div>    
+    <footer class="footer">footer</footer>
+</body>
+</html>

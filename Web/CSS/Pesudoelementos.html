@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <link rel="shortcut icon" href="../HTML/Imagenes/MV.png">
+    <link rel="stylesheet" href="Normalize_resetear_estilos.css">
+    <link rel="stylesheet" href="Pesudoelementos.css">
+</head>
+<body>
+    <h1>Pseudoelementos</h1>
+    <p>Se utilizan para dar estilos a partes especificas de un elemento.</p>
+    <p>La sintaxis es: selector::pseudo-element{estilos}</p>
+    <h2>Existen 5 pseudoelementos:</h2>
+    <ul>
+        <li>::first-line (Elementos de bloque)</li>
+        <li>::first-letter (Elementos de bloque)</li>
+        <li>::before</li>
+        <li>::after</li>
+        <li>::selection</li>    
+    </ul>
+    <p><strong>Para ::before y ::after, la propiedad content es obligatoria, son elementos de linea por defecto, son hijos del elemento al que pertenecen.</strong></p>
+    <h2>Ejemplo:</h2>
+    <h1 class="Title">Titulo</h1>
+    <p class="Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi soluta, similique delectus labore quidem obcaecati eaque sapiente doloribus ipsa quisquam tempore consequatur veritatis mollitia, praesentium quam atque ab reprehenderit!</p>
+    <p class="Dolar">5</p>
+    <span class="Inline">Soy un elemento de linea</span>
+</body>
+</html>

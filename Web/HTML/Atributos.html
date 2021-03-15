@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es" dir="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+    <link rel="shortcut icon" href="Imagenes/MV.png">
+
+    <style>
+        li[data-user="user"]{
+            color:red
+        }
+        li[data-user="admin"]{
+            color:cyan
+        }
+    </style>
+</head>
+<body>
+    <a href="/Rutas_enlaces.html">Rutas y Rutas_enlaces</a>
+    <br>
+    <main role="Contenido_principal">
+        <nav role="Navegacion principlas">
+            <ul onclick="alert('Hola')">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </nav>
+        <br>
+        <p class="Parrafo" id="Primer_parrafo" style="color:blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil. Eligendi nisi quisquam necessitatibus cupiditate dolorum ad minima corporis labore repudiandae harum ullam expedita, vitae voluptates cumque nam esse iure!</p>
+    </main>
+    <!--Los atributos personalizados incluyen "data"-->
+    <nav role="Navegacion principlas">
+        <ul onclick="alert('Hola')">
+            <li data-user="user">Item 1</li>
+            <li data-user="admin">Item 2</li>
+            <li data-user="user">Item 3</li>
+            <li data-user="user">Item 4</li>
+        </ul>
+    </nav>
+    <input type="text">
+</body>
+</html>

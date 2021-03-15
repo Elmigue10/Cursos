@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="Document_object_model.css">
+</head>
+<body>
+    <h1 id="title" class="title">DOM Document Object Model</h1>
+    <section id="section">
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tempore, sequi error iste quae enim architecto. Sed, suscipit, atque nulla perspiciatis est vel dolor voluptas fugiat nisi soluta corrupti praesentium. <span class="span">Como seria</span></p>
+        <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit atque praesentium a suscipit numquam dignissimos temporibus perferendis voluptates. Corrupti voluptatum nesciunt neque harum fuga nemo tenetur a ullam, consequatur eveniet.</p>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nisi necessitatibus similique incidunt dolore error dignissimos maxime itaque quisquam sapiente nostrum explicabo, in reprehenderit ducimus veniam maiores tempore odit earum.</p>
+    </section>
+
+
+    <h1 id="title" class="title">Atributos desde JavaScript</h1>
+    <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+    </form>
+
+    <h1 class="title">Eventos de raton y teclado</h1>
+    <p class="box" id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quo repudiandae dolorum architecto fugiat quisquam explicabo, dignissimos, qui consequuntur delectus, cupiditate perspiciatis aliquid fuga veritatis reprehenderit mollitia nisi necessitatibus a!</p>
+    <input type="text" id="input">
+    <button id="button">Click</button>
+
+    <h1 class="title">Objeto evento</h1>
+    <form action="#" id="form">
+        <input type="text" id="objeto">
+        <input type="submit" value="enviar">
+        <button id="objeto_button">Click</button>
+        <div id="gallery" class="gallery">
+            <div class="gallery__item">1</div>  
+            <div class="gallery__item">2</div>  
+            <div class="gallery__item">3</div>  
+            <div class="gallery__item">4</div>  
+            <div class="gallery__item">5</div>
+            <div class="gallery__item">6</div>
+            <div class="gallery__item">7</div>
+            <div class="gallery__item">8</div>
+            <div class="gallery__item">9</div>
+        </div>
+    </form>
+
+    <h1 id="title"><span>Crear e insertar elementos</span></h1>
+    <ul id="daysList"></ul>
+    <select id="DaysSelect"></select>
+
+    <h1 class="title">Recorrerlo (DOM Traversing)</h1>
+    <nav>
+        <ul id="parent">
+            <li>son 1</li>
+            <li>son 2</li>
+            <li>son 3</li>
+            <ul>
+                <li>grandson 1</li>
+                <li>grandson 2</li>
+                <li>grandson 3</li>
+            </ul>
+        </ul>
+    </nav>
+
+    <h1 class="title">Insertar y eliminar elementos II (Clonar) </h1>
+    <ul id="list1">
+        <li>Reference 1</li>
+        <li>Reference 2</li>
+    </ul>
+
+    <h1 class="title">Objetos nativos y timers</h1>
+    <button id="button1">click</button>
+
+
+    <script src="Document_object_model.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+}
+.img{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container{
+    background: lightblue;
+    line-height: 0;
+    display: table;
+    align-items: center;
+}
+.img-container img,
+.img-container span{
+    vertical-align: middle;
+}
+.img-container span{
+    vertical-align: middle;
+    display: table-cell;
+}
+.img-ejemplo{
+    width: 250px;
+    height: 450px;
+    background: lightseagreen;
+    object-fit: cover;
+    object-position: center;
+    transition: object-position 2s;
+}
+.img-ejemplo:hover{
+    object-position: right;
+    filter: invert(.7);
+}
+.img-2-ejemplo{
+    width: 100%;
+    padding-top: 5px;
+    filter: brightness(2);
+    filter: drop-shadow(-10px -10px 5px red);
+    filter: grayscale(.5);
+    filter: hue-rotate(-180deg);
+    filter: opacity(.8);
+    filter: saturate(3);
+    /*filter: sepia();*/
+}
+.img-2-ejemplo:hover{
+    filter: blur(5px);
+}

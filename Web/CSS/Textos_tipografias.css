@@ -1,0 +1,27 @@
+.TYT{
+    text-align: center;
+}
+.Tipografias{
+    text-align: center;
+}
+.Title{
+    font-family: monospace;
+    font-size: 10vmin;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.Paragraph{
+    text-align: justify ;
+    text-indent: 30px;
+}
+.Link{
+    text-decoration: none;
+}
+.Box{
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
+.Box-item{
+    line-height: 100px;
+}

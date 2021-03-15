@@ -1,0 +1,31 @@
+.Card{
+    height: 70%;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+    padding-top: 10%;
+}
+.Mensaje{
+    align-self: center;
+    align-items: center;
+    justify-content: right;
+}
+.volver{
+    margin: 4%;
+    height: 2rem;
+    width: 17%;
+    align-self: center;
+    text-align: center;
+    border-top-left-radius: 10%;
+    background: rgb(0, 183, 255);
+    border: none;
+    padding: .8rem;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: inherit;
+}
+.Mensaje{
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}

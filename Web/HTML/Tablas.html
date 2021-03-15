@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="shortcut icon" href="Imagenes/MV.png">
+</head>
+
+<style>
+    th{
+        background: lightblue;
+    }
+    .Coral{
+        background: lightcoral;
+    }
+    .Yellow{
+        background: lightpink;
+    }
+</style>
+
+<body>
+    <table>
+        <caption>Horario</caption>
+
+        <colgroup>
+            <col span="3">
+            <col class="Yellow">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <tr class="Coral">
+            <td>8:10</td>
+            <td>Calculo</td>
+            <td>Ecuaciones</td>
+            <td>Fisica</td>
+            <td>Ingles</td>
+            <td>Ingles</td>
+        </tr>
+        <tr>
+            <td>9:10</td>
+            <td>Calculo</td>
+            <td>Ecuaciones</td>
+            <td>Fisica</td>
+            <td>Ingles</td>
+            <td>Ingles</td>
+        </tr>    
+        <tr>
+            <td>10:10</td>
+            <td>Estructura</td>
+            <td>Infraestructura</td>
+            <td>Caculo</td>
+            <td>Analisis</td>
+            <td>Laboratorio</td>
+        </tr>    
+        <tr>
+            <td>11:10</td>
+            <td colspan="5">BREAK</td>
+        </tr>  
+        <tr>
+            <td>12:10</td>
+            <td>Estructura</td>
+            <td>Infraestructura</td>
+            <td>Calculo</td>
+            <td>Analisis</td>
+            <td>Laboratorio</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>Horas</td>
+                <td colspan="5">5 HORAS</td>
+            </tr>
+        </tfoot>          
+        </tbody>
+    </table>
+</body>
+</html>

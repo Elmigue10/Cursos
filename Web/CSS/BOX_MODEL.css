@@ -1,0 +1,32 @@
+.Title {
+    text-align: center;
+    background: lightseagreen;
+    height: 200px;
+    width: 200px;
+}
+h2{
+    background: salmon;
+    width: 50px;
+}
+/*
+Los elementos en linea no tienen ni ancho ni alto
+*/
+.Link{  
+    background: lime;
+    width: 1000px;
+    height: 1000px;
+}
+.Box_1{
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+    padding: 10px;
+    border: 5px solid palevioletred;
+    margin: 20px;
+    outline: 5px solid blue;
+}
+.Box_2{
+    width: 200px;
+    height: 200px;
+    background: lightskyblue;
+}

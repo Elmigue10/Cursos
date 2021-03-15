@@ -1,0 +1,17 @@
+.table{
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    caption-side: bottom;
+    border-spacing: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    empty-cells: hide;
+}
+.table-data{
+    border: 1px solid black;
+    background: lightblue;
+}
+.table-container{
+    overflow-x: auto;
+}

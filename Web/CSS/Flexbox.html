@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="shorcut icon" href="Imagenes/MV.png">
+    <link rel="stylesheet" href="Normalize_resetear_estilos.css">
+    <link rel="stylesheet" href="Flexbox.css">
+</head>
+<body>
+    <h1 class="flexbox">Flexbox</h1>
+    <p>Es un modelo de layout que permite que las cajas sean flexibles, es un valor de la propiedad display.</p>
+    <p>Existe display:flex y display:inline-flex para que el contenedor sea bloque o linea respectivamente.</p>
+    <p>Se necesita un contenedor (flex-container) y al menos un hijo (flex-item).</p>
+    <p>Las cajas flexibles son los items, el contenedor es el contexto al que pertenecen los items.</p>
+    <p>Existen dos ejes para colocar y alinear elementos.</p>
+    <p>Por defecto el eje pricipal es horizontal y de izquierda a derecha y el eje secundario es vertical de arriba a abajo.</p>
+    <p>Se pueden intercambiar los ejes y la direccion de ambos.</p>
+    <h2>Flex-direction y flex-wrap:</h2>
+    <h2>Ejemplo:</h2>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+    </div>
+    <h2>Alineamiento</h2>
+    <h2>Ejemplo:</h2>
+    <div class="flex-container-2">
+        <div class="flex-item-2">1</div>
+        <div class="flex-item-2">2</div>
+        <div class="flex-item-2">3</div>
+        <div class="flex-item-2">4</div>
+        <div class="flex-item-2">5</div>
+        <div class="flex-item-2">6</div>
+        <div class="flex-item-2">7</div>
+        <div class="flex-item-2">8</div>
+        <div class="flex-item-2">9</div>
+        <div class="flex-item-2">10</div>
+    </div> 
+    <h2>flex-grow, flex-shrink, flex-basis, flex-flow y order</h2>
+    <h2>Ejemplo:</h2> 
+    <div class="flex-container-3">
+        <div class="flex-item-3">1</div>
+        <div class="flex-item-3">2</div>
+        <div class="flex-item-3">3</div>
+        <div class="flex-item-3">4</div>
+        <div class="flex-item-3">5</div>
+    </div>
+    <h2>Ejemplo practico:</h2>
+    <div class="card">
+        <div class="card__left">
+            <img src="Imagenes/MV.png">
+        </div>
+        <div class="card__right">
+            <h1 class="card__title">contact</h1>
+            <form action="#" class="form">
+                <div class="form__names">
+                    <div class="form__field">
+                        <label for="name" class="form__label">first name</label>
+                        <input type="text" id="name" class="form__input">
+                    </div>
+                    <div class="form__field">
+                        <label for="surname" class="form__label">last name</label>
+                        <input type="text" id="surname" class="form__input">
+                    </div>
+                </div>
+                <div class="form__field">
+                    <label for="email" class="form__label">email</label>
+                    <input type="email" id="email" class="form__input">
+                </div>
+                <div class="form__field">
+                    <label for="message" class="form__label">Message</label>
+                    <textarea id="message" class="form__textarea"></textarea>
+                </div>
+                <input type="submit" class="form__submit" value="send">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

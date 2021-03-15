@@ -1,0 +1,22 @@
+.Title{
+    text-align: center;
+}
+.Box_1, .Box_2{
+    width: 300px;
+    height: 200px;
+    margin: 2em;
+}
+.Box_1{
+    background: lawngreen;
+    border: 100px solid crimson;
+    border-top-color: transparent;
+    border-top-width: 200px;
+}
+.Box_2{
+    background: lightseagreen;
+    border-left-width: 5px;
+    border-left-style: dotted;
+    border-left-color: salmon;
+    border-bottom-style: none;
+    border-bottom-width: 20px;
+}

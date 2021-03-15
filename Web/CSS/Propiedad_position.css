@@ -1,0 +1,162 @@
+h1{
+    text-align: center;
+}
+.Title{
+    text-align: center;
+    font-size: 3em;
+}
+.Text_1{
+    visibility: hidden;
+    display: none;
+    font-size: 2em;
+}
+.Text_2{
+    font-size: 2em;
+}
+/*Position relative*/
+.Box_1, .Box_2{
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}
+.Box_1{
+    background: lightseagreen;
+    position: relative;
+    top: 100px;
+    right: -15px;
+    left: 50px;
+    z-index: 1;
+}
+.Box_2{
+    background: salmon;
+    position: relative;
+}
+/*Position absolut*/
+.Container{
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    position: relative;
+}
+[class^="Container_"]{
+    width: 50px;
+    height: 50px;
+}
+.Container_1{
+    border: 4px solid coral;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Container_2{
+    border: 4px solid salmon;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.Container_3{
+    border: 4px solid lightseagreen;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.Container_4{
+    border: 4px solid limegreen;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.Container_5{
+    border: 4px solid blueviolet;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+/*Position fixed*/
+body{
+    padding-top: 4em;
+}
+.Menu{
+    background: lightseagreen;
+    padding: .5em;
+    text-align: center;
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*Position Sticky*/
+.Slide{
+    height: 300px;
+    background: salmon;
+    font-size: 3em;
+    text-align: center;
+    line-height: 6em;
+}
+.Menu-slide{
+    background: darkcyan;
+    padding: .5em;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.Title-slide{
+    margin: 0;
+}
+/*Z-index*/
+[class$="-z-index"]{
+    width: 75px;
+    height: 75px;
+    font-size: 1.5em;
+    line-height: 75px;
+    text-align: center;
+    position: relative;
+}
+.Box_1-z-index{
+    background: darkcyan;
+    z-index: 10;
+}
+.Box_2-z-index{
+    background: darkorange;
+    top: -38px;
+    left: 38px;
+    z-index: 20;
+}
+.Box_3-z-index{
+    background: darkturquoise;
+    top: -75px;
+    left: 75px;
+    z-index: 30;
+}
+.Box_4-z-index{
+    background: darkred;
+    top: -150px;
+    left: 50px;
+    z-index: 25;
+}
+.Padre{
+    background: darkkhaki;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 30px;
+    z-index: 50;
+}
+.Hijo{
+    background: darkcyan;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: -10px;
+    left: 150px;
+    z-index: 40 ;
+}

@@ -1,0 +1,27 @@
+/*
+Etiqueta ->1
+Clases y pseudoclases ->10
+Id ->100
+Estilos en linea -> 1000
+!important -> Gana a todo, esw recomendable no utilizarlo
+*/
+
+p{
+    color: purple;
+    font-size: 1.5em ;
+}
+a{
+    color: inherit;
+}
+.Parrafo{
+    color: red;
+}
+#Parrafo{
+    color: yellow;
+}
+.Important{
+    color: green !important;
+}
+.Herencia{
+    color: inherit;
+}

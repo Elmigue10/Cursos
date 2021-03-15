@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad position</title>
+    <link rel="shortcut icon" href="../HTML/Imagenes/MV.png">
+    <link rel="stylesheet" href="Normalize_resetear_estilos.css">
+    <link rel="stylesheet" href="Propiedad_position.css">
+</head>
+<body>
+    <h1>Position</h1>
+    <p>Position es la propiedad que nos permite modificar el flujo del HTML.</p>
+    <h2>Los valores del position son:</h2>
+    <ul>
+        <li>Static (Valor por defecto).</li>
+        <li>Relative.</li>
+        <li>Absolut.</li>
+        <li>Fixed.</li>
+        <li>Sticky.</li>
+    </ul>
+    <h2>Al tener un elemento posicionado podemos moverlo en los 3 ejes.</h2>
+    <ul>
+        <li>top: Podemos mover el elemento en relacion a la parte superior.</li>
+        <li>right: Podemos mover el elemento en relacion a la parte derecha.</li>
+        <li>bottom: Podemos mover el elemento en relacion a la parte izquierda.</li>
+        <li>left: Podemos mover el elemento en relacion a la parte inferior.</li>
+        <li>z-index: Podemos mover el elemento en el eje z.</li>
+    </ul>
+    <h2>Ejemplo:</h2>
+    <h1 class="Title">Atributo position</h1>
+    <p class="Text_1">First text</p>
+    <p class="Text_2">Second text</p>
+    <h1>Position Relative</h1>
+    <p>El valor relative hace que el elemento se coloque respecto a su posicion en el flujo.</p>
+    <p>Al moverlo el elemento conserva su espacio reservado.</p>
+    <p>Su punto de referencia no se modificara aunque movamos el elemento.</p>
+    <h2>Ejemplo:</h2>
+    <div class="Box_1">
+        Box 1
+        top y left tienen preferencia ante bottom y right.
+    </div>
+    <div class="Box_2">
+        Box 2
+    </div>
+    <h1>Postion Absolut</h1>
+    <p>El valor absolut hace que el contenido se coloque respecto a su contenedor posicionado mas cercano, si no encuentra ninguno sera el viewport.</p>
+    <br>
+    <p>El elemento no conserva su espacio en el flujo.</p>
+    <p>Si no tiene dimensiones declaradas, sus dimensiones se ajustan al contenido.</p>
+    <p>Su punto de referencia no se modificara aunque movamos el elemento.</p>
+    <h2>Ejemplo:</h2>
+    <div class="Container">
+        <div class="Container_1"></div>
+        <p>Texto de Ejemplo</p>
+        <div class="Container_2"></div>
+        <div class="Container_3"></div>
+        <div class="Container_4"></div>
+        <div class="Container_5"></div>
+    </div>
+
+    <h1>Position Fixed</h1>
+    <p>El valor fixed hace que el elemento se coloque respecto al viewport.</p>
+    <p>El elemento no conserva su espacio en el flujo.</p>
+    <p>Si no tiene dimensiones declaradas, sus dimensiones se ajustan al contenido.</p>
+    <p>Su punto de referencia no se modificara aunque movamos el elemento.</p>
+    <p>Cuando hacemos scroll el elemento no se movera, se queda fijado.</p>
+    <h2>Ejemplo:</h2>
+    <div class="Menu">MENU FIXED</div>
+    <h1 class="Title-menu">Titulo</h1>
+    <p class="Text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod sint blanditiis dolores, aut minima fugiat delectus accusantium hic incidunt, id eaque deserunt expedita ducimus culpa maxime nemo iusto ea.</p>
+    <p class="Text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod sint blanditiis dolores, aut minima fugiat delectus accusantium hic incidunt, id eaque deserunt expedita ducimus culpa maxime nemo iusto ea.</p>
+    <p class="Text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod sint blanditiis dolores, aut minima fugiat delectus accusantium hic incidunt, id eaque deserunt expedita ducimus culpa maxime nemo iusto ea.</p>
+
+    <h1>Position Sticky</h1>
+    <p>Position sticky es una mezcla entre relative y fixed.</p>
+    <p>El elemento conserva su espacio en el flujo.</p>
+    <p>Si no tiene dimensiones declaradas, sus dimensiones  se ajustan al contendio.</p>
+    <p>Su punto de referencia no se modificara aunque movamos el elemento.</p>
+    <p>Cuando hacemos scroll el elemento se movera hasta alcanzar el tope establecido.</p>
+    <h2>Ejemplo:</h2>
+    <div class="Slide">SLIDE</div>
+    <div class="Menu-slide">MENU STICKY</div>
+    <h1 class="Title-slide"></h1>
+    <p class="Text-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, atque laborum veritatis maiores distinctio iste deleniti sequi debitis. Itaque, provident? Rerum, odit alias quas ut hic quo! Totam, consequuntur quam?</p>
+    <p class="Text-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, atque laborum veritatis maiores distinctio iste deleniti sequi debitis. Itaque, provident? Rerum, odit alias quas ut hic quo! Totam, consequuntur quam?</p>
+    <p class="Text-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, atque laborum veritatis maiores distinctio iste deleniti sequi debitis. Itaque, provident? Rerum, odit alias quas ut hic quo! Totam, consequuntur quam?</p>
+
+    <h1>Z-INDEX</h1>
+    <p>Nos permiten modificar el orden de las capas en el eje z (profundidad).</p>
+    <p>Admite valores positvos y negativos.</p>
+    <p>Es recomedable usar valores no consecutivos:100, 200, 300.</p>
+    <p>Si el padre tiene z-index declarado no podremos poner a un hijo por encima.</p>
+    <div class="Box_1-z-index">1</div>
+    <div class="Box_2-z-index">2</div>
+    <div class="Box_3-z-index">3</div>
+    <div class="Box_4-z-index">4</div>
+    <div class="Padre">
+        <div class="Hijo">Hijo</div>
+    </div>
+</body> 
+</html>

@@ -1,0 +1,20 @@
+.Title{
+    text-align: center;
+}
+.Image-box{
+    width: 90%;
+    margin: 2em auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Image{
+    border: 5px solid blue;
+    outline: 5px solid red;
+    outline-offset: 5px;
+}
+.text{
+    position: absolute;
+}
+

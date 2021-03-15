@@ -1,0 +1,116 @@
+h1{
+    text-align: center;
+    padding-top: 25px;
+}
+.Subtitle{
+    text-align: center;
+}
+/*Dynamics*/
+.Link:link{
+    color: red;
+}
+.Link:visited{
+    color: lawngreen;
+}
+.Link:active{
+    color: cyan;
+    background: red;
+}
+.Button{
+    text-decoration: none;
+    display: inline-block;
+    background: red;
+    padding: .5em;
+    border-radius: 10px;
+    color: white;
+}
+.Button:active{
+    transform: scale(0.8)
+}
+.Title:hover{
+    color: blueviolet;
+}
+.Button:hover{
+    color: red;
+    background: white;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.Input:focus{
+    background: lawngreen;
+}
+.Menu{
+    background: lightcoral;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.Inicio:target{
+    padding-top: 10px;
+}
+.span{
+    display: block;
+}
+.span:lang(en){
+    color: red;
+}
+.span:lang(es){
+    color: blue;
+}
+/*Pseudoclases de estado*/
+.Input, .Label{
+    display: block;
+}
+.Input:disabled{
+    background: yellow;
+}
+.Input:checked + Label{
+    font-size: 2em;
+}
+.Input:in-range{
+    background: cyan;
+}
+.Input:out-of-range{
+    background: blueviolet;
+}
+.Input:optional{
+    background: purple;
+}
+.Input:required{
+    background: salmon;
+}
+.Input:valid{
+    background: lightseagreen;
+}
+.Input:invalid{
+    background: pink;
+}
+/*Pseudoclases 2*/
+.Paragraph{
+    padding: .5em;
+    background: lightblue;
+}
+.Paragraph:empty{
+    padding: 0;
+    all: unset;
+}
+.Paragraph:first-child{
+    background: lightcoral;
+}
+.Paragraph:last-child{
+    background: darkorange;
+}
+.Paragraph:nth-child(even){
+    background: cyan;
+}
+.Paragraph:nth-child(4n){
+    background: purple;
+}
+.Paragraph:nth-of-type(3){
+    background: red;
+}

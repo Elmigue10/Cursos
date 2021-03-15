@@ -1,0 +1,45 @@
+<!--
+    BEM
+    BLOCK
+    ELEMENT
+    MODIFIER
+    -Los bloques suelen denominar por una sola palabra o con dos palabras separadas por un guion si puede existir conflictos de estilo:
+    .menu/.main-menu
+    .gallery/.main-gallery
+    -Los elementos se nombran con el nombre del bloque al que pertenecen y su nombre con dos guiones bajos__:
+    .menu__item/.main-menu__link
+    .gallery__item/.main-gallery__link
+    -Los modificadores se nombran con el nombre del bloque al que pertenecen y su modificador con dos guiones medios --:
+    .menu__item--active
+    .gallery__item-special
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <link rel="shotcut icon" href="../HTML/Imagenes/MV.png">
+    <link rel="stylesheet" href="BEM.css">
+    <link rel="stylesheet" href="Normalize_resetear_estilos.css">
+</head>
+<body>
+
+    <h1 class="Main_title">Metodologia BEM</h1>
+
+    <header class="Header">
+        <nav>
+            <ul class="Main-menu">
+                <li class="Main-menu__item"><a href="#" class="Main-menu__link">Item 1</a></li>
+                <li class="Main-menu__item"><a href="#" class="Main-menu__link Main-menu__link--active">Item 2</a></li>
+                <li class="Main-menu__item"><a href="#" class="Main-menu__link">Item 3</a></li>
+                <li class="Main-menu__item"><a href="#" class="Main-menu__link">Item 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="Main"></main>
+
+    <footer class="Footer"></footer>
+</body>
+</html>

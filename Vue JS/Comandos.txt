@@ -1,0 +1,16 @@
+vue create "nombre proyecto"
+manual
+	babel
+	vuex
+	linter / formatter
+save? n
+
+cd "nombre proyecto"
+npm run serve
+
+vue --version --->version
+
+vue ui ---> Abrir la interfaz grafica
+
+VUE CON BOOTSTRAP
+npm i bootstrap-vue

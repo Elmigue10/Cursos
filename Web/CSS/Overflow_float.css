@@ -1,0 +1,17 @@
+.title{
+    text-align: center;
+}
+.article{
+    border: 1px solid royalblue;
+    padding: .5em;
+    height: 100px;
+    overflow: auto;
+}
+.article-2{
+    border: 1px solid royalblue;
+    overflow: hidden;
+}
+.article-2 img{
+    max-width: 50%;
+    float: right;
+}

@@ -1,0 +1,25 @@
+.listas{
+    text-align: center;
+}
+/*Resetear estilos de la lista*/
+.list{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.list-item{
+    float: left;
+    padding-right: 1em;
+}
+.list-item::before{
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url(MV.png);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+}

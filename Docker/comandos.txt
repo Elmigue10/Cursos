@@ -1,0 +1,29 @@
+docker run hello-world
+docker images -> Muestra las imagenes
+docker pull ubuntu -> Instala una imagen
+docker run ubuntu echo "hello world"
+docker run -it ubuuntu bash -> Ejecuta el bash de ubuntu de una manera iterativa, es decir, que no se cierra de golpe
+ctrl + d -> Salir de la ejecucición
+docker ps -> Muestra la ejecucion de la imagen que hemos instalado, es decir, podemos ejecutar una imagen varias veces y cada una tendra un ID
+docker ps -a -> Historial de ejecuciones
+docker rm ID -> Elimina un contenedor
+docker rim NOMBRE -> Elimina un contenedor
+docker start ID ó NOMBRE -> Arranca de nuevo un contenedor
+docker stot ID ó NOMBRE -> Para un contenedor
+docker run -p 3000:80 nginx -> Corre la imagen en el puerto 3000 del computador
+docker run -p 80:80 -d nginx -> Corre la imagen sin que la consola se desactive
+docker ps -aq -> Muestra solo los ID
+docker rm $(docker ps -aq)
+docker run -p 80:80 -p 3000:80 -d nginx -> Corre varias imagenes al tiempo
+docker run -d -p 3306:3306 --name mydatabase mysql -> Le coloca un nombre a la imagen
+docker run -d -p 3306:3306 --name mydatabase mysql MYSQL_ROOT_PASWORD=contraseñ mysql -> Coloca una variable de entorno
+docker run -d -p 80:80 -p 3000:80 --name servers nginx
+docker rm mydatabase -f -> fuerza el eliminado aunque se encuentre en ejecución
+docker ps --format="ID\t{{.ID}}"
+docker ps --format="ID:\t{{.ID}}"\nNombre:\t{{.Names}} -> Les da formato al listado de los contenedores
+docker rmi hello-world -> Borra una imagen
+docker images -aq -> Devuelve el ID de las imagenes instaladas
+docker run -d -p 80:80 --name website -v c/Users/Admin/Documents/Programacion/Docker/website:/usr/share/nginx/html nginx
+docker run -d -p 80:80 --name website -v c/Users/Admin/Documents/Programacion/Docker/website:/usr/share/nginx/html:ro nginx
+docker exec -it website bash
+docker build -t migueltest .

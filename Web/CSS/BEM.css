@@ -1,0 +1,68 @@
+/*
+    BEM
+    BLOCK
+    ELEMENT
+    MODIFIER
+    -Los bloques suelen denominar por una sola palabra o con dos palabras separadas por un guion si puede existir conflictos de estilo:
+    .menu/.main-menu
+    .gallery/.main-gallery
+    -Los elementos se nombran con el nombre del bloque al que pertenecen y su nombre con dos guiones bajos__:
+    .menu__item/.main-menu__link
+    .gallery__item/.main-gallery__link
+    -Los modificadores se nombran con el nombre del bloque al que pertenecen y su modificador con dos guiones medios --:
+    .menu__item--active
+    .gallery__item-special
+*/
+
+.Main_title{
+    text-align: center;
+}
+.Header{
+    background: lightblue;
+    height: 50px;
+}
+.Main{
+    background: lightseagreen;
+    height: 600px;
+}
+.Footer{
+    background: lightcoral;
+    height: 200px;
+}
+
+.Main-menu{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Main-menu__item{
+    line-height: 3;
+}
+.Main-menu__link{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: crimson;
+}
+.Main-menu__link--active{
+    background: lightcoral;
+}
+
+/*
+    EJEMPLOS
+*/
+
+.Main-form{
+
+}
+.Main-form__label{
+
+}
+.Main-form__submit{
+
+}
+
+
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="shorcut icon" href="Imagenes/MV.png">
+    <link rel="stylesheet" href="Normalize_resetear_estilos.css">
+    <link rel="stylesheet" href="Grid.css">
+</head>
+<body>
+    <h1>GRID</h1>
+    <ul>
+        <li>Es un modelo de layout que permite construir grillas o cuadriculas dinamicas. Es un valor de la propiedad display.</li>
+        <li>Al igual que con flexbox, tenemis display:line-grid.</li>
+        <li>Se necesita un contenedor (grid-container) y al menos un hijo (grid-item).</li>
+        <li>Las celdas son los items, el contenedor es el contexto al que pertencen los items.</li>
+    </ul>
+    <ul>
+        <li>Grid column: Es cada columna de nuestra cuadricula.</li>
+        <li>Grid row: Es cada fila de nuestra de nuestra columna.</li>
+        <li>Grid cell: Es cada celda de nuestra cuadricula.</li>
+        <li>Grip gap: Es la separacion entre celdas.</li>
+        <li>Grid line: Existen column lines y row lines, son las lineas que delimitan cada columna/fila respectivamente.</li>
+    </ul>
+    <h2>Ventajas:</h2>
+    <ul>
+        <li>Cada celda es dinamica y el resto de la cuadricula es adpatada.</li>
+        <li>Podemos decir donde empieza cada celda y donde acaba, tanto en dilas como en columnas.</li>
+    </ul>
+    <h2>Ejemplo 1:</h2>
+    <br>
+    <div class="ejemplo-1">
+        <div class="grid-container-1">
+            <div class="grid-item-1">A</div>
+            <div class="grid-item-1">B</div>
+            <div class="grid-item-1">C</div>
+            <div class="grid-item-1">D</div>
+            <div class="grid-item-1">E</div>
+            <div class="grid-item-1">F</div>
+            <div class="grid-item-1">G</div>
+            <div class="grid-item-1">H</div>
+            <div class="grid-item-1">I</div>
+            <div class="grid-item-1">J</div>
+            <div class="grid-item-1">K</div>
+            <div class="grid-item-1">L</div>
+        </div>
+    </div>
+    <h2>Ejemplo 2:</h2>
+    <div class="ejemplo-2">
+        <div class="grid-container-2">
+            <div class="grid-item-2">A</div>
+            <div class="grid-item-2">B</div>
+            <div class="grid-item-2">C</div>
+            <div class="grid-item-2">D</div>
+            <div class="grid-item-2">E</div>
+            <div class="grid-item-2">F</div>
+            <div class="grid-item-2">G</div>
+            <div class="grid-item-2">H</div>
+            <div class="grid-item-2">I</div>
+        </div>
+    </div>
+    <h3>Ejemplo 3:</h3>
+    <div class="ejemplo-3">
+        <div class="grid-container-3">
+            <div class="grid-item-3">A</div>
+            <div class="grid-item-3">B</div>
+            <div class="grid-item-3">C</div>
+            <div class="grid-item-3">D</div>
+            <div class="grid-item-3">E</div>
+            <div class="grid-item-3">F</div>
+            <div class="grid-item-3">G</div>
+            <div class="grid-item-3">H</div>
+            <div class="grid-item-3">I</div>
+        </div>
+    </div>
+    <h3>Ejemplo 4:</h3>
+    <div class="ejemplo-4">
+        <div class="grid-container-4">
+            <div class="grid-item-4">A</div>
+            <div class="grid-item-4">B</div>
+            <div class="grid-item-4">C</div>
+            <div class="grid-item-4">D</div>
+            <div class="grid-item-4">E</div>
+            <div class="grid-item-4">F</div>
+            <div class="grid-item-4">G</div>
+            <div class="grid-item-4">H</div>
+            <div class="grid-item-4">I</div>
+            <div class="grid-item-4">J</div>
+            <div class="grid-item-4">K</div>
+            <div class="grid-item-4">L</div>
+            <div class="grid-item-4">M</div>
+            <div class="grid-item-4">N</div>
+        </div>
+    </div>
+    <h3>Ejemplo 5:</h3>
+    <div class="ejemplo-5">
+        <div class="grid-container-5">
+            <div class="grid-item-5">A</div>
+            <div class="grid-item-5">B</div>
+            <div class="grid-item-5">C</div>
+            <div class="grid-item-5">D</div>
+            <div class="grid-item-5">E</div>
+            <div class="grid-item-5">F</div>
+        </div>
+    </div>
+    <h3>Ejemplo 6:</h3>
+    <div class="ejemplo-6">
+        <div class="grid-container-6">
+            <div class="grid-item-6">A</div>
+            <div class="grid-item-6">B</div>
+            <div class="grid-item-6">C</div>
+            <div class="grid-item-6">D</div>
+            <div class="grid-item-6">E</div>
+            <div class="grid-item-6">F</div>
+            <div class="grid-item-6">G</div>
+            <div class="grid-item-6">H</div>
+        </div>
+    </div>
+    <h2>Ejemplo 7:</h2>
+    <main class="main">
+        <header class="header">HEADER</header>
+        <aside class="aside">ASIDE</aside>
+        <article class="article">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptate ipsa impedit? Magni, optio nesciunt! Consectetur at tempora debitis hic sunt? Explicabo odit, neque provident magni accusamus aperiam alias consequatur.</article>
+        <footer class="footer">FOOTER</footer>
+    </main>
+    <h3>Ejemplo 8:</h3>
+    <div class="ejemplo-8">
+        <div class="grid-container-8">
+            <div class="grid-item-8">A</div>
+            <div class="grid-item-8">B</div>
+            <div class="grid-item-8">C</div>
+            <div class="grid-item-8">D</div>
+            <div class="grid-item-8">E</div>
+            <div class="grid-item-8">F</div>
+            <div class="grid-item-8">G</div>
+            <div class="grid-item-8">H</div>
+            <div class="grid-item-8">I</div>
+        </div>
+    </div>
+    <h3>Ejemplo 9:</h3>
+    <div class="ejemplo-9">
+        <div class="grid-container-9">
+            <div class="grid-item-9">A</div>
+            <div class="grid-item-nested">
+                <div class="grid-item-9">1</div>
+                <div class="grid-item-9">2</div>
+                <div class="grid-item-9">3</div>
+                <div class="grid-item-9">4</div>
+                <div class="grid-item-9">5</div>
+                <div class="grid-item-9">6</div>
+            </div>
+            <div class="grid-item-9">C</div>
+            <div class="grid-item-9">D</div>
+            <div class="grid-item-9">E</div>
+            <div class="grid-item-9">F</div>
+        </div>
+    </div>
+    <h3>Ejemplo 10:</h3>
+    <div class="ejemplo-10">
+        <div class="grid-container-10">
+            <div class="grid-item-10">A</div>
+            <div class="grid-item-10">B</div>
+            <div class="grid-item-10">C</div>
+            <div class="grid-item-10">D</div>
+            <div class="grid-item-10">E</div>
+            <div class="grid-item-10">F</div>
+            <div class="grid-item-10">G</div>
+            <div class="grid-item-10">H</div>
+            <div class="grid-item-10">I</div>
+        </div>
+    </div>
+</body>
+</html>

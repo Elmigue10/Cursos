@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+}
+.Title::first-letter{
+    color: red;
+    font-size: 2em;
+}
+.Text::first-line{
+    color: blue;
+    font-size: 1.5em;
+}
+.Inline{
+    display: block;
+}
+
+.Inline::first-letter{
+    color:red;
+    font-size: 2em;
+}
+.Text::selection{
+    color: lime;
+    background: red;
+}
+.Dolar::before{
+    content: '$';
+    width: 20px;
+    height: 20px;
+    background: cyan;
+}
+.Dolar::after{
+    content:'.00';
+    width: 50px;
+    height: 50px;
+    background: cyan;
+}

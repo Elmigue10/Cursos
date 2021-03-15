@@ -1,0 +1,59 @@
+h1{
+    text-align: center;
+}
+[class^="Bg-"]{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 30%;
+    height: 150px;
+    border: 1px solid rebeccapurple; 
+}
+body{
+    padding-bottom: 50em;
+    text-align: center;
+}
+.Bg-color{
+    background-color: cyan;
+}
+.Bg-image{
+    background-image: url(MV.png);
+}
+.Bg-size{
+    background-image: url(MV.png);
+    background-size: contain;
+}
+.Bg-repeat{
+    background-image: url(MV.png);
+    background-size: 10%;
+    background-repeat: repeat-x;
+}
+.Bg-position{
+    background-image: url(MV.png);
+    background-size: 10%;
+    background-repeat: repeat-x;
+    background-position: left center;
+}
+.Bg-origin{
+    border: 10px dotted red;
+    padding: 25 px;
+    background-image: url(MV.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.Bg-clip{
+    border: 5px dotted red;
+    background-color: blue;
+    background-clip: content-box;
+    padding: 20px;
+}
+.Bg-attachment{
+    width: 100%;
+    background-image: url(MV.png);
+    background-size: contain;
+    background-attachment: fixed;
+}
+.Bg-multiple{
+    background-color: blue, red;
+}

@@ -1,0 +1,23 @@
+.Box_1{
+    width: 200px;
+    height: 200px;
+    background: lightseagreen;
+    margin: 1em 2em 3em 4em;   
+}
+.Box_2{
+    width: 200px;
+    height: 200px;
+    background: lightcoral;
+    border: 2px solid red;
+    padding: 1em 2em 3em 4em;
+    margin-top: 1em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+    margin-left: 4em;
+}
+.Box_2_content{
+    width: 20px;
+    height: 20px;
+    background: lawngreen;
+    border:2px solid purple;
+}

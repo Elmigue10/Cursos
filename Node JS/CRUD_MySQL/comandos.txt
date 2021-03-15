@@ -1,0 +1,7 @@
+npm init --y
+npm install express mysql express-myconnection morgan ejs
+npm install nodemon -D
+
+
+srcipts -> "dev" : "nodemon src/app.js"
+npm run dev

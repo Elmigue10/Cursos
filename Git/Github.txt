@@ -1,0 +1,45 @@
+Workind directory: Es donde se trabajan todos los archivos
+Stating area: Es la etapa previa a al guardado de archivos
+Repositiry: Es donde se almacenan los archivos
+COMANDOS:
+git init ---> Crea un proyecto o se aplica git sobre un proyecto existente
+git add ----> Pasa los archivos del working directory al stating area
+git add . ---> Agregar todos los archivos al stating area
+git status ---> Muestra en que estado el archivo
+git commit ---> Pasa los archivos del stating area al respository
+git commit -m "He agregado un gitignore" ---> Realiza un commit con un comentario
+git push ---> Sube los archivos a un repositorio remoto
+git pull ---> Muestra los cambios hechos
+git log ---> Para ver todos los commits que hemos creado
+git clone ---> Hace una copia desde el servidor al equipo
+git checkoreut -- app.js ---> Elimina los cambios realizados
+git diff "file" ---> Muestra los cambios que se han realizado en los archivos
+git branch ---> Muestra la rama en la que se encuentra
+git branch login---> Crea una nueva rama llamada login
+git chekocut login ---> Se traslata a la rama login
+git config --global user.email "email@email.com"
+git config --global user.name "Miguel"
+
+git commit
+i para poder escribir
+esc y ":wq"
+
+.gitignore
+En esta archivo se deben guardar los nombres de las carpetas que se quieren ignorar,
+pero de igual manera ahi que añadirla al stating area
+
+git remote add origin https://github.com/Elmigue10/Primer-repositorio.git
+Este comando indica en que repositorio remoto se almacenara el codigo
+git push -u origin master
+Este comando almacena el codigo en el repositorio remoto 
+
+git clone url
+Descarga el codigo del repositorio automaticamente.
+
+PASOS EN ORDEN
+git init
+git add .
+git status
+git commit -m "primer avance"
+git remote add origin https://github.com/Elmigue10/Ingenieria-web-1.git
+git push -u origin master

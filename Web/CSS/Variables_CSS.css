@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+:root{
+    --color: red;
+    --border: 2px solid blue;
+}
+.Paragraph{
+    color: var(--color)
+}
+.Article{
+    --color:cyan;
+}
+.Check:checked + .Box{
+    --color:purple;
+}
+.Box{
+    width: 100px;
+    height: 100px;
+    background: var(--color);
+    border: var(--border);
+}

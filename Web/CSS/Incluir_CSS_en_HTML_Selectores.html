@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluir CSS en HTML</title>
+    <link rel="shortcut icon" href="../HTML/Imagenes/MV.png">
+    <!--Insertar CSS en la cabecera, no recomendable salvo que se tenaga una sola pagina o sea una prueba-->
+    <style>
+        p{
+            color: lightslategray;
+        }
+    </style>
+
+    <!--Exportando hoja de estilos externa, forma mas recomendada-->
+    <link rel="stylesheet" href="selectores.css">
+
+    <!--Utilizando la etiqueta import, no es recomdebale
+    <syles>
+        @import url("style-dist.css")
+    </syles>
+    -->
+</head>
+<body>
+    <!--Estilo en la linea, no recomendable para estilos estaticos, solo para estilos en tiempo real, como con JavaScript-->
+    <h1 style="color:blueviolet">I´m a header</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aliquam ducimus adipisci sequi dolor eius nemo non temporibus recusandae repellat! Deleniti similique et enim! Doloribus culpa ad ipsum expedita aut!</p>
+    <h2>I´m also a header</h2>
+
+    <h1 class="Title">I´m a header</h1>
+    <p class="Text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aliquam ducimus adipisci sequi dolor eius nemo non temporibus recusandae repellat! Deleniti similique et enim! Doloribus culpa ad ipsum expedita aut!</p>
+    <h2 class="Subtitle">I´m also a header</h2>
+
+    <h1 id="Title">I´m a header</h1>
+    <p id="Text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aliquam ducimus adipisci sequi dolor eius nemo non temporibus recusandae repellat! Deleniti similique et enim! Doloribus culpa ad ipsum expedita aut!</p>
+    <h2 id="Subtitle">I´m also a header</h2>
+
+    <a class="rojo verde" href="">Enlace 1 rojo verde</a>
+    <a class="rojo" href="#">Enlace 2 rojo</a>
+    <a class="verde" href="">Enlace 3 verde</a>
+    <a class="verde rojo" href="#">Enlace 4 verde rojo</a>
+
+    <h3>Titulo</h3>
+    <h4>Subtitulo 2</h4>
+    <h4>Subtitulo 3</h4>
+    <h5>Otro Subtitulo</h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus atque provident, saepe architecto non tempora voluptates beatae harum omnis <span>I´M A SPAN</span> ipsam vitae corporis mollitia? Quis perferendis vitae sapiente quaerat beatae!</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quo fuga cumque, sunt atque facere minus, aspernatur expedita nobis ab <span>SOY UN SPAN</span> dicta incidunt illo voluptate libero beatae saepe pariatur, culpa tempore.</p>
+        <span>OTRO SPAN</span>
+    </div>
+</body>
+</html>

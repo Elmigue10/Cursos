@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="shortcut icon" href="Imagenes/MV.png">
+
+    <style>
+        input, label {
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <!--Los formularios se envian por defecto, el atributo action="#" cancela el comportamiento por defecto-->
+    <form action="#">
+        <Label>Nombre
+            <input type="text">
+        </Label>
+
+        <label for="Name">Name
+            <input type="text" id="Name">
+        </label>
+
+        <label for="Age">Edad
+            <input type="number" id="Age">
+        </label>
+
+        <label for="Password">Constraseña
+            <input type="password">
+        </label>
+
+        <input type="submit" value="Enviar">
+
+        <input type="image" src="Imagenes/MV.png">
+
+        <button>Enviar</button>
+
+        <input type="reset" value="Resetear formulario">
+
+        <legend>Seleccion sexo</legend>
+        <label for="Man">Hombre</label>
+        <input type="radio" id="Man" name="sex">
+        <label for="Woman">Mujer</label>
+        <input type="radio" id="Woman" name="sex">
+
+        <legend>Hobbies</legend>
+        <label for="Play">Play</label>
+        <input type="checkbox" id="Play" name="Hobbies">
+        <label for="Sing">Sing</label>
+        <input type="checkbox" id="Sing" name="Hobbies">
+        <label for="Read">Read</label>
+        <input type="checkbox" id="Read" name="Hobbies">
+
+        <legend>Fecha de nacimiento</legend>
+        <input type="date">
+        <legend>Hora</legend>
+        <input type="time">
+        <legend>Mes</legend>
+        <input type="month">
+        <legend>Semana</legend>
+        <input type="week">
+
+        <legend>Elegir color</legend>
+        <input type="color">
+
+        <legend>Emails</legend>
+        <input type="email">
+
+        <legend>Archivos</legend>
+        <input type="file">
+
+        <legend>Rango</legend>
+        <input type="range" min="0" max="100" step="5">
+
+        <legend>Busqueda</legend>
+        <input type="search">
+
+        <legend>Telefonos</legend>
+        <input type="tel">
+
+        <!--El input de tipo list no es soportado por navegadores como Safari-->
+        <label for="Browsers">Elija un navegador</label>
+        <input list="Browsers" name="Browsers">
+        <datalist id="Browsers">
+            <option value="Chrome">
+            <option value="Firefox"></option>
+            <option value="Opera">
+            <option value="Safari"></option>
+        </datalist>
+    </form>
+    <button>Enviar</button>
+    <br>
+    <form action="#">
+        <label for="Deportes">Deportes</label>
+        <select name="" id="Deportes">
+            <option value="Opcion 1">Futbol</option>
+            <option value="Opcion 2">Baloncesto</option>
+        </select>
+        <br>
+        <select multiple name="" id="Lenguajes">Lenguajes de programacion
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+        <br>
+        <select size="9" multiple name="" id="Comidas">
+            <optgroup label="Comidas rapidas">
+                <option value="Pizza">Pizza</option>
+                <option value="Hamburgesa">Hamburguesa</option>
+            </optgroup>
+
+            <optgroup label="Bebidas">
+                <option value="Gaseosa">Gaseosa</option>
+                <option value="Jugo">Jugo</option>
+            </optgroup>
+
+            <optgroup label="Postres">
+                <option value="Peach_melba">Peach melba</option>
+                <option value="Brownie">Brownie</option>
+            </optgroup>
+            <br>
+            <label for="Observaciones">Observaciones</label>
+            <textarea name="" id="Observaciones" cols="30" rows="10"></textarea>
+            <br>
+            <label for="Observaciones1">Observaciones1</label>
+            <textarea style="resize: none;" name="" id="Observaciones1" cols="30" rows="10"></textarea>
+        </select>
+        <br>
+        <button>Enviar</button>
+    </form>
+
+    <!--El auto complete puede estar on o puede estar off, de esta manera
+    se despliega o no el autocompletado
+    Placeholder: Establece un valor de inicio y se borra al introducir informacion.
+    -->
+    <form action="#" autocomplete="on">
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <label for="Name">Nombre</label>
+            <input type="text" id="Name" required>
+            <label for="Last_name">Apellido</label>
+            <input type="text" id="Last_name" autofocus placeholder="Introduzca su apellido">
+            <label for="Age">Edad</label>
+            <input type="number" id="Age" min="18" max="120">
+            <label for="Direction">Direccion</label>
+            <input type="text" id="Direction" disabled>
+            <label for="User_name">User name</label>
+            <input type="text" id="User_name" value="Elmigue_" readonly>
+            <label for="Phone">Telefono</label>
+            <input type="text" id="Phone" maxlength="10">
+            <label for="Email">Correo electronico</label>
+            <input type="email" id="Email" minlength="4">
+        </fieldset>
+        <br>
+        <input type="radio" name="Gender" checked>Hombre
+        <input type="radio" name="Gender">Mujer
+        <br>
+        <select name="" id="Options">
+            <option value="option_1">Opcion 1</option>
+            <option value="option_2" selected>Opcion 2</option>
+            <option value="option_3">Opcion 2</option>
+        </select>
+        <br>
+        <button>Enviar</button>
+    </form>
+    
+</body>
+</html>

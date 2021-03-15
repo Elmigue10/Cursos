@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>API file II</title>
+        <title>API file + API Drag & Drop</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <form class="form" id="form" method="post" enctype="multipart/form-data">
+            <div>
+                <input id="hide" type="file" name="file" id="file" multiple />
+
+                <div id="drop-zone" class="drop-zone">
+                    <i class="fas fa-file-upload"></i>
+                    <p class="drop-zone__text">
+                        Drop file or click to upload file
+                    </p>
+                </div>
+        <input type="submit" id="form__button" value="Upload">
+        </form>
+
+
+        <style>
+            body{
+                margin: 0;
+                background: grey;
+                font-family: sans-serif;
+                color: #222;
+                user-select: none;
+            }
+            .drope-zone{
+                width: 80%;
+                margin: 1rem auto;
+                height: 300px;
+                background-color: #838383;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                border: 5px dashed #caced6;
+            }
+            .drope-zone--active{
+                border: 5px solid #caced6;
+                background-color: #414141;
+                color: #caced6;
+            }
+            .form{
+                width: 100%;
+                text-align: center;
+            }
+            .form__button{
+                background: orangered;
+                border: none;
+                padding: 0.2rem 0.8rem;
+                border-radius: 15px;
+                color: #414141;
+                cursor: pointer;
+            }
+            .hide{
+                display: none;
+            }
+        </style>
+        <script src="Drag_and_drop_API_file.js"></script>
+      </body>
+    </html>

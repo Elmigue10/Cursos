@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+.Inline{
+    background: lime;
+    display: inline-block;
+    height: 100px;
+
+}
+.Block{
+    background: yellowgreen;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="shotcut icon" href="Imagenes/MV.png">
+    <link rel="stylesheet" href="Normalize_resetear_estilos.css">
+    <link rel="stylesheet" href="Responsive.css">
+</head>
+<body>
+    <h1>Responsive web design</h1>
+    <ul>
+        <li>No es un estandar, no es CSS, es un conjunto de patrones de diseño.</li>
+        <li>Su objetivo es que cualquier pagina web se vea bien independientemente del dispositivo.</li>
+        <li>Los frameworks resuelven ese problema, pero es un error utilizarlos para evitar aprender lo que hay por detras.</li>
+        <li>Se basaba en 3 conceptos fundamentales:</li>
+        <ul>
+            <li>Columnas fluidas.</li>
+            <li>Imagenes flexibles: max-width 100%.</li>
+            <li>Media querys.</li>
+        </ul>
+    </ul>
+    <h2>Columnas fluidas:</h2>
+    <ul>
+        <li>Para conseguir un sistema de columnas o de cajas fluidas es tan sencillo como aplicar los anchos de porcentaje.</li>
+        <li>No hay que asignar todos los anchos en porcentajes , solo se aplica a los elementos que necesiten cambiar su tamaño.</li>
+    </ul>
+    <h2>Media querys:</h2>
+    <ul>
+        <li>Son condicionales para que el navegador sepa como actuar en funcion de la condicion.</li>
+        <li>all: Apto para todos los dispositivos.</li>
+        <li>print: Destinado a material impreso y visualizacion del modo de vista previa de impresion.</li>
+        <li>screen: Destinado principalmente a las pantallas.</li>
+        <li>speech: Destinado a sintetizadores de voz.</li>
+    </ul>
+    <h3>Sintaxis:</h3>
+    <code>
+        @media "tipo de medio" and|or (condicion)
+    </code>
+    <p>Condiciones mas utilizadas:</p>
+    <ul>
+        <li><code>@media screen and (min-width:360px)</code></li>
+        <li><code>@media screen and (max-width:1024px) and (orientacion:landscape)</code></li>
+        <li><code>@media screen and (max-width:480px) or (orientacion:portrait)</code></li>
+    </ul>
+    <h2>Metodlogias:</h2>
+    <ul>
+        <li>Mobile-first: Consiste en hacer primero el diseño movil e ir subiendo de tamaño.</li>
+        <li>Desktop-first: Consiste en hacer primero el diseño de escritorio e ir bajando de tamaño.</li>
+        <li>Content-first: Consiste en saber primero todo el contenido de la web y despues hacer el diseño de la web.</li>
+    </ul>
+    <h2>Ejemplo 1:</h2>
+    <header class="header">
+        <div class="banner">Banner</div>
+    </header>
+    <div class="flexbox grid">
+        <p class="flexbox__item grid__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error ipsa deserunt ut delectus aliquam esse dolorum nesciunt molestias voluptatem maiores, laudantium consectetur quo, eius explicabo nobis magni. Quisquam, modi?</p>
+        <p class="flexbox__item grid__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error ipsa deserunt ut delectus aliquam esse dolorum nesciunt molestias voluptatem maiores, laudantium consectetur quo, eius explicabo nobis magni. Quisquam, modi?</p>
+    </div>
+    <footer class="footer">footer</footer>
+    <h2>Ejemplo 2:</h2>
+    <div class="container">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Udxl17LVHYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </div>
+    </div>
+    <h2>Ejemplo 3:</h2>
+    <ul class="menu">
+        <li class="menu__item">Item 1</li>
+        <li class="menu__item">Item 2</li>
+        <li class="menu__item">Item 3</li>
+        <li class="menu__item">Item 4</li>
+    </ul>
+</body>
+</html>

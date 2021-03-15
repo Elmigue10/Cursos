@@ -1,0 +1,39 @@
+.login{
+    background-color: #333;
+    height: 30%;
+    width: 30%;
+    color: #eee;
+    margin-top: 8%;
+    margin-left: 32%;
+    padding: 2%;
+    border-radius: 10%;
+}
+
+.form{
+    align-items: center;
+}
+.titulo{
+    align-items: center;
+    margin-bottom: 10%;
+    margin-left: 26%;
+    font-family: 'Sansita Swashed', cursive;
+}
+.form_input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    color: inherit;
+    width: 100%;
+    margin: 2% 0% 2% 0%;
+}
+.form_submit {
+    width: 40%;
+    background: rgb(0, 183, 255);
+    border: none;
+    padding: .8rem;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: inherit;
+    margin-top: 7%;
+    margin-left: 30%;
+}
