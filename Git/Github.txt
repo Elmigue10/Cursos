@@ -43,3 +43,14 @@ git status
 git commit -m "primer avance"
 git remote add origin https://github.com/Elmigue10/Ingenieria-web-1.git
 git push -u origin master
+
+
+Una de las posibles formas de trabajar en git, para evitar problemas sería siguiendo este flujo:
+Descargo el repo con git clone
+Creo una rama local en la que trabajo git checkout -b mi_rama_local y voy añadiendo commits a esa rama, hasta que la feature o el bug está resuelto.
+Vas a master con git checkout master y te traes los posibles cambios que haya en remoto git pull
+Vas a la rama local con git checkout mi_rama_local e integras en ella los nuevos cambios de master con git rebase master. Esto metería los cambios en master por debajo de tus cambios actuales por decirlo de alguna forma. Esto evita los commits vacíos de "merge". A algunos equipos le gustan tener esos commits para saber cuando se integro y a otros no. A mi particularmente me resultan molestos. por eso lo hago así.
+Si hay algún conflicto lo resuelves
+Cambias a master y te traes los cambios de la rama local git merge mi_rama_local
+Subes los cambios git push origin master
+Si has estado trabajando en master directamente, lo que alguna gente considera una mala práctica, puedes intentar traerte los cambios remotos directamente por debajo de tus cambios locales con git pull --rebase, resolver los conflictos y hacer git push

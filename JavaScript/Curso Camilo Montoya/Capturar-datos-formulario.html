@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caputrar datos de un formulario</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="name">Nombre</label>
+            <input type="text" id="name">
+            <label for="lastName">Apellido</label>
+            <input type="text" id="lastName">
+            <label for="country">País</label>
+            <select name="country" id="country" required>
+                <option selected disabled hidden>Seleccion:</option>
+                <option>Colombia</option>
+                <option>Argentina</option>
+                <option>Japón</option>
+                <option>Mexico</option>
+            </select>
+            <button type="submit" id="boton">Enviar</button>
+        </form>
+        <table>
+            <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Pais</th>
+            </thead>
+            <tbody id="lista-usuarios">
+            </tbody>
+        </table>
+    </div>
+    <script src="./Capturar-datos-formulario.js"></script>
+</body>
+</html>
