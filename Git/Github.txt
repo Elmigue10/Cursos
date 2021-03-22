@@ -54,3 +54,13 @@ Si hay algún conflicto lo resuelves
 Cambias a master y te traes los cambios de la rama local git merge mi_rama_local
 Subes los cambios git push origin master
 Si has estado trabajando en master directamente, lo que alguna gente considera una mala práctica, puedes intentar traerte los cambios remotos directamente por debajo de tus cambios locales con git pull --rebase, resolver los conflictos y hacer git push
+
+
+Git status -> Mirar si tienes modificaciones tuyas y si existe algún pull o push
+Git fetch -> Por si acaso tus ramas no se han actualizado correctamente, esto NO actualiza los ficheros de las ramas, sólo el estado de esa rama
+Git status -> Para verificar de nuevo modificaciones, pull y pushs
+Git pull -> Ahora sí descargas las actualizaciones
+Git add/commit/... -> Ahora guardas tus modificaciones
+Git status -> Miras que siga sin necesitar un pull, por si las moscas
+Git push -> Subes tus datos
+Git status -> Compruebas que está todo correctamente
