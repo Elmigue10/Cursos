@@ -64,3 +64,9 @@ Git add/commit/... -> Ahora guardas tus modificaciones
 Git status -> Miras que siga sin necesitar un pull, por si las moscas
 Git push -> Subes tus datos
 Git status -> Compruebas que está todo correctamente
+
+Para el proyecto buen gusto, solo trabaje en la rama local, checkout a master, merge miguel y push.
+git pull en master,git checkout rama_loca, git rebase master 
+En la rama local -> git add, git commit, git push rama_local
+luego cambiar a master
+git merge rama_local, git commit, git push

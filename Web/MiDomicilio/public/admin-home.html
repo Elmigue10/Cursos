@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/admin-home.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>  
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Domicilios</a>
+                  </li>
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Mi cuenta
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" id="header-search" type="search" placeholder="Buscar un producto" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="añadir-producto">
+      <a class="btn btn-outline-success" href="#formAñadir">añadir producto</a>
+      <div id="formAñadir" class="formAñadir">
+        <div class="form-contenido">
+          <a href="#" id="exit-form"><span class="icon-cross"></span></a>
+          <h2>Añadir producto</h2>
+          <label for="id">Id:</label>
+          <input type="text" id="id" required>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required>
+          <label for="precio">Precio:</label>
+          <input type="text" id="precio" required>
+          <label for="descripcion">Descripción:</label>
+          <textarea name="descripcion" id="descripcion" required></textarea>
+          <label for="cantidad">Cantidad:</label>
+          <input type="text" id="cantidad" required>
+          <label for="categoria">Categoría:</label>
+          <select name="categoria" id="categoria" required>
+            <option selected disabled hidden>Seleccionar:</option>
+            <option value="frutas">Frutas</option>
+            <option value="verduras">Verduras</option>
+            <option value="carnes">Carnes</option>
+            <option value="aseo">Aseo</option>
+            <option value="snakcs">Snacks</option>
+          </select>
+          <label for="unidad">Unidad:</label>
+          <select name="unidad" id="unidad" required>
+            <option selected disabled hidden>Seleccionar:</option>
+            <option value="unidad">Por unidad</option>
+            <option value="libras">Por libras</option>
+          </select>
+          <button class="btn btn-outline-success" id="enviarBoton">añadir</button>
+        </div>  
+      </div>
+    </div>
+
+    <div class="editar-producto">
+      <div id="formEditar" class="formEditar">
+        <div class="form-contenido">
+          <a href="#" id="exit-form"><span class="icon-cross"></span></a>
+          <h2>Editar producto</h2>
+          <label for="id">Id:</label>
+          <input type="text" id="id" required>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required>
+          <label for="precio">Precio:</label>
+          <input type="text" id="precio" required>
+          <label for="descripcion">Descripción:</label>
+          <textarea name="descripcion" id="descripcion" required></textarea>
+          <label for="cantidad">Cantidad:</label>
+          <input type="text" id="cantidad" required>
+          <label for="categoria">Categoría:</label>
+          <select name="categoria" id="categoria" required>
+            <option selected disabled hidden>Seleccionar:</option>
+            <option value="frutas">Frutas</option>
+            <option value="verduras">Verduras</option>
+            <option value="carnes">Carnes</option>
+            <option value="aseo">Aseo</option>
+            <option value="snakcs">Snacks</option>
+          </select>
+          <label for="unidad">Unidad:</label>
+          <select name="unidad" id="unidad" required>
+            <option selected disabled hidden>Seleccionar:</option>
+            <option value="unidad">Por unidad</option>
+            <option value="libras">Por libras</option>
+          </select>
+          <div class="buttonsContainer">
+            <button class="btn btn-outline-success" id="enviarBoton">Listo<span class="icon-checkmark"></span>
+            </button>
+            <button class="btn btn-outline-success" id="buttonEliminar">Eliminar<span class="icon-bin"></span></button>
+        </div>
+        </div>  
+      </div>
+    </div>
+
+    <div id="productos"></div>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

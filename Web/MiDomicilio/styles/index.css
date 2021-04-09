@@ -1,0 +1,174 @@
+/* Fuentes de iconos */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../public/fonts/icomoon.eot?i8uoxm');
+  src:  url('../public/fonts/icomoon.eot?i8uoxm#iefix') format('embedded-opentype'),
+    url('../public/fonts/icomoon.ttf?i8uoxm') format('truetype'),
+    url('../public/fonts/icomoon.woff?i8uoxm') format('woff'),
+    url('../public/fonts/icomoon.svg?i8uoxm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+  
+
+
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+}
+
+/* Nav-bar */
+
+.container-logo{
+    width: 8%;
+    /* height: 100%; */
+    background: #EEEEEE;
+    padding: 10px;
+}
+
+.container-logo img{
+    height: 100%;
+    width: 100%;
+    margin-left:3px; 
+}
+
+.navbar{
+    width: 100%;
+}
+
+#header-search{
+    width: 100%;
+}
+
+/* Categorias */
+
+.categorias{
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.categorias p{
+    margin-top: 12px;
+    margin-left: 35px;
+}
+.categorias li{
+  display: inline;
+}
+.categorias button{
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+/* Productos */
+
+#productos{
+  margin-top: 2%;
+}
+#productos li{
+  list-style: none;
+}
+
+.productosContainer{
+  margin: 0 auto;
+  border:solid 0.1rem black;
+  width: 40%;
+  height: 10rem;
+  display:flex;
+}
+.imagenContainer{
+  background: #EEEEEE;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+.imagenContainer img{
+  margin-top: 10%;
+  width: 70%;
+  height: 70%;
+}
+.contentContainer{
+  background:#F8F9FA;
+  width: 75%;
+  padding-left: 2%;
+  text-align: left;
+  color: #000000;
+}
+#buttonCarrito{
+  margin-top: 3%;
+  margin-left: 35%;
+  text-decoration: none;
+}
+.nombreProducto{
+  font-size: 190%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.descripcionProducto{
+  font-size: 100%;
+  font-weight:lighter;
+}
+
+
+/* Footer */
+footer{
+    background: #F8F9FA;
+    margin-top: 100%;
+}
+.redes{
+    height: 100%;
+    background: #F8F9FA;
+    text-align: center;
+}
+.redes a{
+    color: black;
+    text-decoration: none;
+    font-size: 200%;
+    margin: 1%;
+}
+.redes ul{
+    margin: 0;
+}
