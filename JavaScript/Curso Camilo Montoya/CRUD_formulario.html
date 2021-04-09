@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <form>
+            <input type="hidden" name="indice" id="indice">
             <label for="name">Nombre</label>
             <input type="text" id="name">
             <label for="lastName">Apellido</label>
@@ -22,17 +23,19 @@
                 <option>Mexico</option>
             </select>
             <button type="submit" id="boton">Enviar</button>
+            <button type="reset" id="limpiar">Limpiar</button>
         </form>
         <table>
             <thead>
                 <th>Nombre</th>
                 <th>Apellido</th>
                 <th>Pais</th>
+                <th>Acciones</th>
             </thead>
             <tbody id="lista-usuarios">
             </tbody>
         </table>
     </div>
-    <script src="./Capturar-datos-formulario.js"></script>
+    <script src="./CRUD_formulario.js"></script>
 </body>
 </html>
