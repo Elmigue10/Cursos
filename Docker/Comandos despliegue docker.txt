@@ -1,0 +1,9 @@
+docker build -t demo-devops-img .  ---> Crea una imagen de la aplicación
+docker run --name demo-devops -p 8080:8080 -d demo-devops-img ---> Crea un contenedor de nombre demo-devops, mape el puerto 8080 del local, con el 8080 del contendor
+docker logs demo-devops --> Muestra los logs de la aplicación
+
+docker build -t elmigue10/demo-devops-img . ---> Crea una imagen con la etiqueta de nuestro nombre de usuario
+docker push elmigue10/demo-devops-img ---> Sube la imagen al docker hub
+
+docker pull elmigue10/demo-devops-img ---> Descarga la imagen del docker hub
+docker run --name demo-devops-container -p 8082:8080 -d elmigue10/demo-devops-img --> Corre la imagen descargada en el puerto 8082
