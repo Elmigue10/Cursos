@@ -1,0 +1,7 @@
+POST http://localhost:8082/demo/parejas
+Content-type: application-json
+
+{
+    "objetivo":12,
+    "numeros":[-2,8,4,15,4,7,25,14,33,18,93,9,-3]
+}
