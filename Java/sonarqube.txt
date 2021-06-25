@@ -1,0 +1,17 @@
+PASO 1: descargar imagen de docker de sonarqube
+
+docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
+
+PASO 2: ingreasar desde el navegador http://localhost:9000
+
+PASO 3 : ingresar con contraseña "admin" y usuario "admin" 
+
+PASO 4 : crear desde el navegador el proyecto, generar token , credenciales y contraseña del proyecto
+
+PASO 5 :si es proyecto maven desde la consola CMD o powershell desde la ruta del proyecto correr el siguiente comando :
+
+mvn clean install  sonar:sonar -Dsonar.host.url=http://localhost:9000  -Dsonar.login=8d5c50ace9b885eae5c20e82144c81da9e82d267 -Dsonar.projectKey=challengecodility
+
+Nota : el navegador refresca todo el proyecto y muestra los errores del mismo
+
+8d5c50ace9b885eae5c20e82144c81da9e82d267

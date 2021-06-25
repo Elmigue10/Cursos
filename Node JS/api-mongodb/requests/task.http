@@ -1,0 +1,39 @@
+###Test path
+GET http://localhost:3000
+
+###Get all Tasks
+GET http://localhost:3000/api/tasks
+
+###Get Tasks by pagination
+GET http://localhost:3000/api/tasks?size=2&page=1
+
+###Get Tasks by pagination adn tittle
+GET http://localhost:3000/api/tasks?size=2&page=1&title=React
+
+
+###Save a Task
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Aprender Angular",
+    "description": "Aprender front-end",
+    "done": true
+}
+
+###Get Task By Id
+GET http://localhost:3000/api/tasks/60d4f32270ec37750c579fe0
+
+###Delete a Task
+DELETE http://localhost:3000/api/tasks/60d4fab9ce842618181f9a58
+
+###Find all done Tasks
+GET http://localhost:3000/api/tasks/done
+
+###Update a task
+PUT http://localhost:3000/api/tasks/60d4f23b1450e45c10bc2ff5
+Content-Type: application/json
+
+{
+    "title": "Aprender ReactJS"
+}

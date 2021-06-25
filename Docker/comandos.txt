@@ -27,3 +27,14 @@ docker run -d -p 80:80 --name website -v c/Users/Admin/Documents/Programacion/Do
 docker run -d -p 80:80 --name website -v c/Users/Admin/Documents/Programacion/Docker/website:/usr/share/nginx/html:ro nginx
 docker exec -it website bash
 docker build -t migueltest .
+
+
+REDIS
+docker pull redis
+docker run --name some-redis -d redis:versión
+docker run -d -p 6379:6379 --name redis redis:6.0
+docker exec -it id-contenedor redis-cli
+
+netstat -aon | findstr 6379
+netstat -aon
+taskkill /F /PID numero-proceso

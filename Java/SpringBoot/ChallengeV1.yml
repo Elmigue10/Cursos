@@ -1,0 +1,123 @@
+openapi: 3.0.1
+
+info:
+  title: Challenge Codility
+
+  description: This API is used in the onboarding process to source candidates for interviews.
+    what you do for hiring at sophos company
+
+  termsOfService: http://codility/terms/
+
+  contact:
+    email: team_sophos@gmail.com
+
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+
+
+  version: 1.0.0
+
+
+servers:
+- url: https://localhost:8080/
+- url: http://localhost:8080/
+
+
+tags:
+- name: Candidate
+  description: ""
+  
+
+paths:
+  /sophos/coe/candidates:
+    post:
+      tags:
+      - Candidate
+      summary: Consult candidate by mail
+      operationId: consultCandidate
+      requestBody:
+        description: ""
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/candidate'
+          
+        required: true
+
+      responses:
+        200:
+          description: successful query
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ok'
+
+        400:
+          description: Bad Request
+        403:
+          description: Forbidden
+        404:
+          description: Not Found
+          
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/notFound'
+        405:
+          description: Method Not Allowed 
+        415:
+          description: Unsupported Media Type 
+        500:
+          description: Internal Server Error
+
+
+ 
+
+
+components:
+  schemas:
+
+    candidate:
+      required:
+      
+      - email
+      type: object
+      properties:
+       
+
+        email:
+          type: string
+          example: ferney.nino@uptc.edu.co
+
+    ok:
+
+          type: "string"
+          example: Archivo descargado en..  C:\Users\ricardo.zuniga\ReportesCodility
+    
+    notFound:
+
+      type: object
+      properties:
+
+        timestamp:
+          type: string
+          example: 2021-06-09T15:11:16.0653337
+        status:
+          type: string
+          example: 404 NOT_FOUND
+        
+        error:
+          type: string
+          example:  404
+
+        message:
+          type: string
+          example: Usuario no encontrado
+        path:
+          type: string
+          example: /sophos/coe/candidates
+
+
+    
+   

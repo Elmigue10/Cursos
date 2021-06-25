@@ -1,0 +1,19 @@
+server:
+    port: 8585
+    error:
+        include-stacktrace: never
+jms:
+    jwt:
+        security:
+            enabled: true
+        timezone: America/Bogota
+        issuer: www.miguel.com
+        token:
+            auth:
+                path: /v1/oauth/client_credential/accesstoken
+            secret: firma secreta
+            #seconds
+            expires-in: 3600
+        excluded:
+            #Rutas que se excluyen
+            path: /v1/multi/v1/exclusión
