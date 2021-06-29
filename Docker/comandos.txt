@@ -35,6 +35,11 @@ docker run --name some-redis -d redis:versión
 docker run -d -p 6379:6379 --name redis redis:6.0
 docker exec -it id-contenedor redis-cli
 
+PROCESOS / PUERTOS
 netstat -aon | findstr 6379
 netstat -aon
+
+POSTGRESQL
+docker pull postgres
+docker run --name postgresdb -d -p 5432:5432 -e POSTGRES_PASSWORD=testing postgres
 taskkill /F /PID numero-proceso
