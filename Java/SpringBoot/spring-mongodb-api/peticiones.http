@@ -1,0 +1,27 @@
+###Guardar un alumno
+POST http://localhost:8080/alumno
+Content-Type: application/json
+
+{
+	"id":"3453",
+	"nombre":"pepito",
+	"edad":20
+}
+
+###Obtener todos los alumnos
+GET http://localhost:8080/alumno
+
+###Obtener alumno por id
+GET http://localhost:8080/alumno/3453
+
+###Editar un alumno
+PUT http://localhost:8080/alumno/3453
+Content-Type: application/json
+
+{
+	"nombre": "Juanito",
+	"edad": 40
+}
+
+###Eliminar un alumno
+DELETE http://localhost:8080/alumno/3453
